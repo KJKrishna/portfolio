@@ -1,0 +1,83 @@
+.tech-section {
+  background-color: #020617;
+  padding-bottom: 0.5rem;
+}
+
+.tech-section-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  position: relative;
+}
+
+.tech-section-inner-content {
+  display: flex;
+  align-items: center;
+}
+
+.tech-section-label {
+  max-width: 11rem;
+  padding-right: 1.5rem;
+  border-right: 1px solid #1f2937;
+  display: none;
+}
+
+.tech-label-text {
+  text-align: right;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.tech-section-slider {
+  position: relative;
+  padding: 1.5rem 0;
+}
+
+.tech-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-logo-image {
+  width: 2rem;
+  height: 2rem;
+  opacity: 0.6;
+  transition: opacity 150ms ease;
+}
+
+.tech-logo-image:hover {
+  opacity: 1;
+}
+
+.tech-blur-left,
+.tech-blur-right {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 5rem;
+  pointer-events: none;
+}
+
+.tech-blur-left {
+  left: 0;
+}
+
+.tech-blur-right {
+  right: 0;
+}
+
+@media (min-width: 768px) {
+  .tech-section-inner {
+    display: flex;
+    align-items: center;
+  }
+
+  .tech-section-label {
+    display: block;
+  }
+
+  .tech-section-slider {
+    width: calc(100% - 11rem);
+  }
+}

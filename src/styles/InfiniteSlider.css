@@ -1,0 +1,20 @@
+.infinite-slider-root {
+  overflow: hidden;
+}
+
+.infinite-slider-track {
+  display: flex;
+  width: max-content;
+  animation-name: infinite-scroll;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes infinite-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
